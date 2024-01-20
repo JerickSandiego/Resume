@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="profile_container">
+        <div class="profile_profileImg">
+          <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t39.30808-6/343978108_3030022787294059_8318343628621563973_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeHF9C-Gvs5rKy9W1yA237c5A-D87oLoHp0D4PzugugenYUtYFKxuiREa689DV2s3Gu9YEJF0v_OXe83A_bbFB7e&_nc_ohc=r96XVtxW6-YAX9QTB1s&_nc_ht=scontent.fmnl3-2.fna&oh=00_AfAybk1Z11V5TC27J6dGrMBtFzLUo6WzNiEg_T0hl5ljww&oe=65B058EB" alt="Jerick San diego">
+        </div>
+        <div>
+          <h1 class="profile_name">
+            <span class="profile_name_firstName">Jerick</span>
+            <span class="profile_name_lastName">San diego</span>
+          </h1>
+          <p class="profile_title">IT Website and Mobile Application</p>
+          <p class="description profile_description">
+            Motivated and detail-oriented IT student seeking an internship or entry-level position to apply academic knowledge and hands-on skills in Information Technology. Eager to contribute to a dynamic team and gain real-world experience in areas such as system administration, network management, and cybersecurity.
+          </p>
+          <button id="changeColorBtn">Change Color</button>
+        </div>
+      </div>
+    </div>
+    <div class="group-1">
+      <div class="skills">
+        <h3 class="title">Mastery</h3>
+        <ul class="skills_list description">
+          <li>Technical Proficiency</li>
+          <li>Adaptability</li>
+          <li>Coding/Programming</li>
+          <li>Graphic Design</li>
+          <li>Video Editing</li>
+        </ul>
+      </div>
+     
+
+      <div class="edu">
+        <h3 class="title">Education</h3>
+        <div class="edu_item">
+          <p class="item_preTitle">2012-2017</p>
+          <h4 class="item_title">Primary</h4>
+          <p class="item_subtitle">
+            Muzon National High School 
+          </p>
+        </div>
+        <div class="edu_item">
+          <p class="item_preTitle">2017-2019</p>
+          <h4 class="item_title">Secondary</h4>
+          <p class="item_subtitle">
+            Sti College San Jose Del Monte
+          </p>
+        </div>
+        <div class="edu_item">
+            <p class="item_preTitle">2022-Present</p>
+            <h4 class="item_title">Tertiary</h4>
+            <p class="item_subtitle">
+              FEU Institute of Technology
+            </p>
+          </div>
+      </div>
+
+    </div>
+    <div class="group-2">
+      
+      <div class="awards">
+        <h3 class="title">Awards</h3>
+        <div class="awards_item">
+          <p class="item_preTitle">2019</p>
+          <h4 class="item_title">Honor Student</h4>
+          <p class=" description">
+            Received from Sti College San Jose Del Monte
+          </p>
+        </div>
+      </div>
+
+      <div class="interest">
+        <h3 class="title">Interest</h3>
+        <div class="interest_items">
+          <div class="interest_item">
+            <i data-feather="music"></i>
+            <span>Music</span>
+          </div>
+          <div class="interest_item">
+            <i data-feather="book"></i>
+            <span>Books</span>
+          </div>
+          <div class="interest_item">
+            <i data-feather="map"></i>
+            <span>Travel</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <hr>
+    <div class="group-3">
+      <div class="contact">
+        <h3 class="title">Contact</h3>
+        <div class="contact_info">
+          <p class="description">
+            Bulacan, San Jose Del Monte
+          </p>
+          <p class="description">
+            +63 967 291 2075
+          </p>
+          <p class="description">
+            elvirasandiego040602@gmail.com
+          </p>
+        </div>
+      </div>
+      <div class="social">
+        <h3 class="title">Socials</h3>
+        <div class="social_items">
+          <a href="#" target="_b" class="social_item">
+            <i data-feather="instagram"></i>
+            <span>@ekir.png</span>
+          </a>
+         
+          <a href="#" target="_blank" class="social_item">
+            <i data-feather="facebook"></i>
+            <span>Rike Sandiego</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('changeColorBtn').addEventListener('click', function () {
+      // Change the background color of the container
+      document.querySelector('.container').style.backgroundColor = getRandomColor();
+      // Change the text color of the container
+      document.querySelector('.container').style.color = getRandomColor();
+    });
+
+    function getRandomColor() {
+      // Generates a random color in hexadecimal format
+      return '#' + Math.floor(Math.random() * 16777215).toString(16);
+    }
+  </script>
+  <script>
+    feather.replace()
+  </script>
+</body>
+
+</html>
+
